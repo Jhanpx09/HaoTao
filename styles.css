@@ -119,13 +119,58 @@ ul li.link-header a:hover {
     color: black;
 }
 
+@media (max-width:480px) {
+
+    #header {
+        height: auto;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    #logo {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        display: flex;
+    }
+
+    #logo img {
+        width: 40px;
+    }
+
+
+    .nav-links {
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .link-header {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .d-flex{
+        padding:0;
+        display: flex;
+        justify-content: center;
+    }
+
+}
 
 /*Portada*/
 
 .portada {
     width: 100%;
     height: 650px;
-    background-image: url(media/fondo_temporaly.jpg);
+    background-image: url(media/Suchi\ 1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -179,11 +224,11 @@ div .subtitulo{
 @media (max-width:480px) {
 
     .portada{
-        height: 470px;
+        height: 550px;
     }
 
     div .textos{
-        margin-top: 100px;
+        margin-top: 160px;
     }
 
     div .titulo {
