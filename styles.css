@@ -18,6 +18,7 @@ html {
 body {
     margin: 0px;
     font-family: 'open sans';
+    max-width: 100%;
 }
 
 p {
@@ -246,6 +247,10 @@ div .subtitulo {
     div .subtitulo {
         font-size: 25px;
         margin-bottom: 32px;
+    }
+
+    .boton {
+        width: 40%;
     }
 
     .sesgoabajo {
