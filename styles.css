@@ -42,7 +42,7 @@ p {
 #canvas #headerHaoTao.headerClass {
     /*Color de fondo del banner*/
     background-color: #ffffff;
-    
+
 }
 
 #headerHaoTao.headerClass {
@@ -157,8 +157,8 @@ ul li.link-header a:hover {
         padding-bottom: 5px;
     }
 
-    .d-flex{
-        padding:0;
+    .d-flex {
+        padding: 0;
         display: flex;
         justify-content: center;
     }
@@ -170,7 +170,7 @@ ul li.link-header a:hover {
 .portada {
     width: 100%;
     height: 650px;
-    background-image: url(media/Suchi\ 1.jpg);
+    background-image: url(media/suchi1.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -180,38 +180,45 @@ ul li.link-header a:hover {
     text-align: center;
 }
 
-div .textos{
+div .textos {
     margin-top: 152px;
 }
 
-div .titulo{
-    font-size: 85px;
+div .titulo {
+    font-size: 125px;
+    font-family: 'Julee', cursive;
+    transition: .5s;
 }
 
-div .subtitulo{
+div .subtitulo {
     font-size: 45px;
     font-weight: 300;
-    margin-bottom: 32px;
+    margin-bottom: 45px;
+    margin-top: 10px;
+    font-family: 'Urbanist', sans-serif;
+    transition: .5s;
 }
 
-.boton{
+.boton {
     display: inline-block;
-    padding: 6px;
-    width: 200px;
+    padding: 8px;
+    width: 17%;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 19px;
+    font-size: 21px;
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
+    font-family: 'Questrial', sans-serif;
+
 }
 
-.boton:hover {
+.textos a:hover {
     background: rgb(171, 2, 2);
     border: rgb(171, 2, 2);
 }
 
-.sesgoabajo{
+.sesgoabajo {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -223,11 +230,11 @@ div .subtitulo{
 
 @media (max-width:480px) {
 
-    .portada{
+    .portada {
         height: 550px;
     }
 
-    div .textos{
+    div .textos {
         margin-top: 160px;
     }
 
@@ -236,19 +243,357 @@ div .subtitulo{
         font-size: 60px;
     }
 
-    div .subtitulo{
+    div .subtitulo {
         font-size: 25px;
         margin-bottom: 32px;
     }
 
-    .sesgoabajo{
+    .sesgoabajo {
         border-width: 0 0 10vh 100vw;
     }
 
 }
 
 
+/*Section de mejores platos*/
+.title-article {
+    max-width: 100%;
+    position: relative;
+    margin-top: -70px;
+}
 
+.title-article-h1 {
+    text-align: center;
+    font-family: 'Julee', cursive;
+    font-size: 80px;
+    margin: 0;
+    padding-left: 40%;
+    padding-bottom: 10px;
+    color: rgb(139, 4, 4);
+}
+
+.post-list {
+    display: flex;
+    min-height: 50vh;
+    /*Altura superior*/
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.post-img-1 {
+    background: url(media/ramen.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2 {
+    background: url(media/curry.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3 {
+    background: url(media/suchi4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post {
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .15);
+}
+
+.post-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3 {
+    transform: scale(1.2);
+}
+
+.post-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span {
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-body h2 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Julee', cursive;
+}
+
+.post-body:hover {
+    color: red;
+}
+
+.post-body p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.post-body .post-link {
+    display: block;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    background: rgb(139, 4, 4);
+    color: white;
+    width: 50%;
+    margin: auto;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    transition: .2s;
+    margin-bottom: 10px;
+}
+
+.post-body .post-link:hover {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+
+}
+
+@media (max-width:480px) {
+
+    .title-article {
+        margin-top: 0px;
+    }
+
+    .title-article-h1 {
+        text-align: right;
+        font-size: 60px;
+        margin-right: 8%;
+        padding-left: 0px;
+        padding-bottom: 1px;
+    }
+
+    .content {
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .post {
+        margin-bottom: 25px;
+    }
+
+}
+
+/*main - fotos instalaciones*/
+
+main {
+    margin: 6% 0% 0% 0%;
+    padding: 0 6% 4% 6%;
+    max-width: 100%;
+    margin-top: 2%;
+    background-color: rgb(240, 240, 240);
+}
+
+#instalaciones {
+    width: 100%;
+}
+
+#tile-main {
+    font-family: 'Julee', cursive;
+    color: rgb(139, 4, 4);
+    font-size: 680%;
+    margin-bottom: 20px;
+    padding-top: 40px;
+
+}
+
+#img-instalaciones {
+    display: flex;
+    max-width: 100%;
+}
+
+.img-1it {
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-color: white;
+    border: 100px;
+    border-radius: 10px;
+
+}
+
+.img-1it img {
+    width: 110%;
+    height: 110%;
+}
+
+.img-1it:hover img {
+    transition: grayscale(100%), 1s;
+}
+
+@media (max-width:480px) {
+    #tile-main {
+        font-size: 600%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #img-instalaciones {
+        display: block;
+    }
+}
+
+/*Comentarios*/
+
+/*Direccion*/
+
+#contacto {
+    background: rgb(240, 240, 240);
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+#wrap-contacto {}
+
+#direccion {
+    display: flex;
+}
+
+.ubicaciones {
+    float: left;
+    padding: 3%;
+}
+
+#an-direc {
+    width: 100%;
+    font-size: 500%;
+    font-family: sans-serif;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+}
+
+#direc {
+    width: 100%;
+    font-size: 1000%;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 0px;
+    color: rgb(139, 4, 4);
+}
+
+#sub-direc {
+    width: 100%;
+    font-size: 300%;
+    font-weight: 600;
+    margin: 0px;
+    padding-top: 10%;
+    color: rgb(90, 90, 90);
+}
+
+.mapa {
+    float: right;
+    padding: 10px;
+    margin-right: 8%;
+}
+
+#title-map {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 600%;
+    padding: 0% 1% 3% 1%;
+    color: rgb(139, 4, 4);
+}
+
+
+
+@media (max-width:480px) {
+    #direccion {
+        display: block;
+    }
+
+
+    .ubicaciones {
+        float: none;
+        padding: 4%;
+    }
+
+    #an-direc {
+        font-size: 350%;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+
+    #direc {
+        font-size: 500%;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #sub-direc {
+        font-size: 250%;
+        text-align: center;
+    }
+
+    .mapa {
+        float: none;
+        padding: 10px;
+        margin-right: 0px;
+    }
+
+    #title-map {
+        font-size: 500%;
+        padding: 0px;
+    }
+
+    .map {
+        width: 100%;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+}
 
 /*footer*/
 
@@ -289,6 +634,7 @@ h5.main-c {
     margin: 2rem auto;
     max-width: 100%;
     color: white;
+    margin-top: 0px;
 }
 
 #hao-fotter {
