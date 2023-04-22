@@ -170,7 +170,7 @@ ul li.link-header a:hover {
 .portada {
     width: 100%;
     height: 650px;
-    background-image: url(media/suchi1.png);
+    background-image: url(media/suchi1.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -290,7 +290,7 @@ div .subtitulo {
 }
 
 .post-img-1 {
-    background: url(media/ramen.jpg);
+    background: url(media/ramen.webp);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -299,7 +299,7 @@ div .subtitulo {
 }
 
 .post-img-2 {
-    background: url(media/curry.jpg);
+    background: url(media/curry.webp);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -308,7 +308,7 @@ div .subtitulo {
 }
 
 .post-img-3 {
-    background: url(media/suchi4.jpg);
+    background: url(media/suchi3.webp);
     width: 100%;
     height: 200px;
     background-size: cover;
