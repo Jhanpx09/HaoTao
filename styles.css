@@ -496,7 +496,6 @@ main {
     margin: 0px;
 }
 
-#wrap-contacto {}
 
 #direccion {
     display: flex;
@@ -599,6 +598,22 @@ main {
     }
 
 }
+
+/*video*/
+
+#video{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title-video{
+    font-size: 50px;
+    font-family: 'Questrial', sans-serif;
+    color:rgb(5, 132, 47);
+}
+
 
 /*footer*/
 
